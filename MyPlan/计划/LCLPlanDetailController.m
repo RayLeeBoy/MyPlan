@@ -6,6 +6,7 @@
 //
 
 #import "LCLPlanDetailController.h"
+#import "LCLPlanHistoryController.h"
 
 @interface LCLPlanDetailController ()
 
@@ -18,8 +19,11 @@
     // Do any additional setup after loading the view.
     self.title = self.model.name;
     
+    UIBarButtonItem * okItem = [[UIBarButtonItem alloc] initWithTitle:@"统计记录" style:UIBarButtonItemStylePlain target:self action:@selector(planHistoryAction)];
+    self.navigationItem.rightBarButtonItem = okItem;
+    
     MyRelativeLayout * root = [MyRelativeLayout new];
-    root.myTop = ZTNavBarHeight;
+    root.myTop = LCLNavBarHeight;
     root.myWidth = MyLayoutSize.fill;
     root.myHeight = MyLayoutSize.fill;
     [self.view addSubview:root];
@@ -62,14 +66,10 @@
     [root addSubview:countLabel];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)planHistoryAction {
+    LCLPlanHistoryController * vc = [LCLPlanHistoryController new];
+    vc.model = self.model;
+    [self.navigationController pushViewController:vc animated:YES];
 }
-*/
 
 @end

@@ -10,6 +10,14 @@
 		2C3726BB2559359100118BC9 /* LCLPlanCreateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3726BA2559359100118BC9 /* LCLPlanCreateController.m */; };
 		2C3726BE25593B6400118BC9 /* LCLPlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3726BD25593B6400118BC9 /* LCLPlanModel.m */; };
 		2C3726C125594B0400118BC9 /* LCLPlanDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3726C025594B0400118BC9 /* LCLPlanDetailController.m */; };
+		2C3726C4255A3F2800118BC9 /* LCLPlanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3726C3255A3F2800118BC9 /* LCLPlanCell.m */; };
+		2C3726C8255A69D100118BC9 /* LCLHabitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3726C7255A69D000118BC9 /* LCLHabitController.m */; };
+		2C3726CB255A6A4100118BC9 /* LCLHabitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3726CA255A6A4100118BC9 /* LCLHabitCell.m */; };
+		2C3726CE255A6A5200118BC9 /* LCLHabitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3726CD255A6A5200118BC9 /* LCLHabitModel.m */; };
+		2C3726D1255A6A9A00118BC9 /* LCLHabitCreateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3726D0255A6A9A00118BC9 /* LCLHabitCreateController.m */; };
+		2C37278F255CFA5A00118BC9 /* LCLPlanHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C37278E255CFA5A00118BC9 /* LCLPlanHistoryController.m */; };
+		2C502832257E0FF90058FB9C /* LCLOngoingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C502831257E0FF90058FB9C /* LCLOngoingController.m */; };
+		2C502835257E100F0058FB9C /* LCLFinishedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C502834257E100F0058FB9C /* LCLFinishedController.m */; };
 		2C805828254A8C850000E089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C805827254A8C850000E089 /* AppDelegate.m */; };
 		2C80582E254A8C850000E089 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C80582D254A8C850000E089 /* ViewController.m */; };
 		2C805831254A8C850000E089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C80582F254A8C850000E089 /* Main.storyboard */; };
@@ -73,6 +81,22 @@
 		2C3726BD25593B6400118BC9 /* LCLPlanModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLPlanModel.m; sourceTree = "<group>"; };
 		2C3726BF25594B0400118BC9 /* LCLPlanDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLPlanDetailController.h; sourceTree = "<group>"; };
 		2C3726C025594B0400118BC9 /* LCLPlanDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLPlanDetailController.m; sourceTree = "<group>"; };
+		2C3726C2255A3F2800118BC9 /* LCLPlanCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLPlanCell.h; sourceTree = "<group>"; };
+		2C3726C3255A3F2800118BC9 /* LCLPlanCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLPlanCell.m; sourceTree = "<group>"; };
+		2C3726C6255A69D000118BC9 /* LCLHabitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLHabitController.h; sourceTree = "<group>"; };
+		2C3726C7255A69D000118BC9 /* LCLHabitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLHabitController.m; sourceTree = "<group>"; };
+		2C3726C9255A6A4100118BC9 /* LCLHabitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLHabitCell.h; sourceTree = "<group>"; };
+		2C3726CA255A6A4100118BC9 /* LCLHabitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLHabitCell.m; sourceTree = "<group>"; };
+		2C3726CC255A6A5200118BC9 /* LCLHabitModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLHabitModel.h; sourceTree = "<group>"; };
+		2C3726CD255A6A5200118BC9 /* LCLHabitModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLHabitModel.m; sourceTree = "<group>"; };
+		2C3726CF255A6A9A00118BC9 /* LCLHabitCreateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLHabitCreateController.h; sourceTree = "<group>"; };
+		2C3726D0255A6A9A00118BC9 /* LCLHabitCreateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLHabitCreateController.m; sourceTree = "<group>"; };
+		2C37278D255CFA5A00118BC9 /* LCLPlanHistoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLPlanHistoryController.h; sourceTree = "<group>"; };
+		2C37278E255CFA5A00118BC9 /* LCLPlanHistoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLPlanHistoryController.m; sourceTree = "<group>"; };
+		2C502830257E0FF90058FB9C /* LCLOngoingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLOngoingController.h; sourceTree = "<group>"; };
+		2C502831257E0FF90058FB9C /* LCLOngoingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLOngoingController.m; sourceTree = "<group>"; };
+		2C502833257E100F0058FB9C /* LCLFinishedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLFinishedController.h; sourceTree = "<group>"; };
+		2C502834257E100F0058FB9C /* LCLFinishedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLFinishedController.m; sourceTree = "<group>"; };
 		2C805823254A8C850000E089 /* MyPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C805826254A8C850000E089 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C805827254A8C850000E089 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -182,8 +206,14 @@
 			children = (
 				2C805857254ABFEA0000E089 /* LCLHomeController.h */,
 				2C805858254ABFEA0000E089 /* LCLHomeController.m */,
+				2C502830257E0FF90058FB9C /* LCLOngoingController.h */,
+				2C502831257E0FF90058FB9C /* LCLOngoingController.m */,
+				2C502833257E100F0058FB9C /* LCLFinishedController.h */,
+				2C502834257E100F0058FB9C /* LCLFinishedController.m */,
 				2C3726BC25593B6400118BC9 /* LCLPlanModel.h */,
 				2C3726BD25593B6400118BC9 /* LCLPlanModel.m */,
+				2C3726C2255A3F2800118BC9 /* LCLPlanCell.h */,
+				2C3726C3255A3F2800118BC9 /* LCLPlanCell.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -204,8 +234,25 @@
 				2C3726BA2559359100118BC9 /* LCLPlanCreateController.m */,
 				2C3726BF25594B0400118BC9 /* LCLPlanDetailController.h */,
 				2C3726C025594B0400118BC9 /* LCLPlanDetailController.m */,
+				2C37278D255CFA5A00118BC9 /* LCLPlanHistoryController.h */,
+				2C37278E255CFA5A00118BC9 /* LCLPlanHistoryController.m */,
 			);
 			path = "计划";
+			sourceTree = "<group>";
+		};
+		2C3726C5255A69B400118BC9 /* 习惯 */ = {
+			isa = PBXGroup;
+			children = (
+				2C3726C6255A69D000118BC9 /* LCLHabitController.h */,
+				2C3726C7255A69D000118BC9 /* LCLHabitController.m */,
+				2C3726C9255A6A4100118BC9 /* LCLHabitCell.h */,
+				2C3726CA255A6A4100118BC9 /* LCLHabitCell.m */,
+				2C3726CC255A6A5200118BC9 /* LCLHabitModel.h */,
+				2C3726CD255A6A5200118BC9 /* LCLHabitModel.m */,
+				2C3726CF255A6A9A00118BC9 /* LCLHabitCreateController.h */,
+				2C3726D0255A6A9A00118BC9 /* LCLHabitCreateController.m */,
+			);
+			path = "习惯";
 			sourceTree = "<group>";
 		};
 		2C80581A254A8C850000E089 = {
@@ -231,8 +278,9 @@
 		2C805825254A8C850000E089 /* MyPlan */ = {
 			isa = PBXGroup;
 			children = (
-				2C3726B82559357100118BC9 /* 计划 */,
 				2C37264B2559226100118BC9 /* 首页 */,
+				2C3726C5255A69B400118BC9 /* 习惯 */,
+				2C3726B82559357100118BC9 /* 计划 */,
 				2C37264C2559226E00118BC9 /* 我的 */,
 				2CAFFD35254BB6C400A369F6 /* 登录注册 */,
 				2C805826254A8C850000E089 /* AppDelegate.h */,
@@ -517,24 +565,32 @@
 				2C3726BE25593B6400118BC9 /* LCLPlanModel.m in Sources */,
 				2C3726BB2559359100118BC9 /* LCLPlanCreateController.m in Sources */,
 				2CAFFD3D254BB6E400A369F6 /* LCLRegistController.m in Sources */,
+				2C3726C8255A69D100118BC9 /* LCLHabitController.m in Sources */,
 				2C805828254A8C850000E089 /* AppDelegate.m in Sources */,
 				2C805859254ABFEA0000E089 /* LCLHomeController.m in Sources */,
 				2C805839254A8C860000E089 /* main.m in Sources */,
 				2CAFFD27254BB5AE00A369F6 /* MyLayoutDelegate.m in Sources */,
+				2C3726D1255A6A9A00118BC9 /* LCLHabitCreateController.m in Sources */,
+				2C3726CE255A6A5200118BC9 /* LCLHabitModel.m in Sources */,
 				2CAFFD1E254BB5AE00A369F6 /* MyLayoutSize.m in Sources */,
 				2C805853254A8D790000E089 /* LCLNetworkManager.m in Sources */,
+				2C502835257E100F0058FB9C /* LCLFinishedController.m in Sources */,
 				2CAFFD21254BB5AE00A369F6 /* MyLayoutMath.m in Sources */,
+				2C3726C4255A3F2800118BC9 /* LCLPlanCell.m in Sources */,
 				2CAFFD2B254BB5AE00A369F6 /* MyLayoutPos.m in Sources */,
 				2CAFFD26254BB5AE00A369F6 /* MyFloatLayout.m in Sources */,
 				2CAFFD25254BB5AE00A369F6 /* MyFlexLayout.m in Sources */,
+				2C502832257E0FF90058FB9C /* LCLOngoingController.m in Sources */,
 				2CAFFD29254BB5AE00A369F6 /* MyFrameLayout.m in Sources */,
 				2C3726C125594B0400118BC9 /* LCLPlanDetailController.m in Sources */,
 				2CAFFD22254BB5AE00A369F6 /* MyBaseLayout.m in Sources */,
 				2CAFFD23254BB5AE00A369F6 /* MyPathLayout.m in Sources */,
 				2C80585E254AC0010000E089 /* LCLBaseController.m in Sources */,
+				2C3726CB255A6A4100118BC9 /* LCLHabitCell.m in Sources */,
 				2CAFFD1B254BB5AE00A369F6 /* MyFlowLayout.m in Sources */,
 				2CAFFD38254BB6DA00A369F6 /* LCLLoginController.m in Sources */,
 				2CAFFD1F254BB5AE00A369F6 /* MyGridLayout.m in Sources */,
+				2C37278F255CFA5A00118BC9 /* LCLPlanHistoryController.m in Sources */,
 				2C805862254AC04B0000E089 /* LCLMineController.m in Sources */,
 				2CAFFD2A254BB5AE00A369F6 /* MyLinearLayout.m in Sources */,
 				2CAFFD28254BB5AE00A369F6 /* MyDimeScale.m in Sources */,

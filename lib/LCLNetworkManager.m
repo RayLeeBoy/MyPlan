@@ -12,13 +12,10 @@
 
 + (void)GET:(NSString *)urlString parameters:(id)parameters success:(void(^)(id responseObject))success failure:(void(^)(NSError *error))failure {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//    manager.responseSerializer = [AFJSONResponseSerializer serializer];
-//    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-//    manager.securityPolicy.allowInvalidCertificates = YES;
-//    manager.securityPolicy.validatesDomainName = NO;
     manager.requestSerializer.timeoutInterval = 10;
     
-    [manager GET:urlString parameters:parameters headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    NSString * url = [NSString stringWithFormat:@"%@%@", LCLMainService, urlString];
+    [manager GET:url parameters:parameters headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         success(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -31,11 +28,10 @@
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
-//    manager.securityPolicy.allowInvalidCertificates = YES;
-//    manager.securityPolicy.validatesDomainName = NO;
     manager.requestSerializer.timeoutInterval = 10;
     
-    [manager GET:urlString parameters:parameters headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    NSString * url = [NSString stringWithFormat:@"%@%@", LCLMainService, urlString];
+    [manager GET:url parameters:parameters headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         success(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

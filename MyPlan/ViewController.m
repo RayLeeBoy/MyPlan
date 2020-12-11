@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "LCLHomeController.h"
 #import "LCLMineController.h"
+#import "LCLHabitController.h"
 
 @interface ViewController ()
 
@@ -19,16 +20,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     LCLHomeController * home = [[LCLHomeController alloc] init];
-    [self setUpChildVC:home imageName:@"首页未选中" selectedImageName:@"首页选中"];
+    home.title = @"首页";
+    [self setUpChildVC:home imageName:@"" selectedImageName:@""];
+    
+    LCLHabitController * habit = [LCLHabitController new];
+    habit.title = @"习惯";
+    [self setUpChildVC:habit imageName:@"" selectedImageName:@""];
 
     LCLMineController * mine = [[LCLMineController alloc] init];
-    [self setUpChildVC:mine imageName:@"我的未选中" selectedImageName:@"我的选中"];
+    mine.title = @"我的";
+    [self setUpChildVC:mine imageName:@"" selectedImageName:@""];
 }
 
 #pragma mark 添加一个控制器
 - (void)setUpChildVC:(UIViewController *)childVC imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName {
     
-    UINavigationController * nav =[[UINavigationController alloc]initWithRootViewController:childVC];
+    UINavigationController * nav =[[UINavigationController alloc] initWithRootViewController:childVC];
 
     UIImage * image = [UIImage imageNamed:imageName];
     UIImage * imaged = [UIImage imageNamed:selectedImageName];
@@ -50,7 +57,7 @@
 
 
 //- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    [LCLNetworkManager POST:@"http://192.168.10.102:8080/parametersServlet" parameters:@{@"username":@"lisi", @"password":@"123456"} success:^(id responseObject) {
+//    [LCLNetworkManager POST:@"/parametersServlet" parameters:@{@"username":@"lisi", @"password":@"123456"} success:^(id responseObject) {
 //        NSLog(@"%s - %@", __func__, responseObject);
 //    } failure:^(NSError *error) {
 //        NSLog(@"%s - %@", __func__, error);

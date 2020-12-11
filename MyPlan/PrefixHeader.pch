@@ -18,6 +18,11 @@
 #import <SVProgressHUD.h>
 #import <MJExtension.h>
 #import <MJRefresh.h>
+#import "MJCSegmentInterface.h"
+
+#import "LCLPlanCell.h"
+#import "LCLPlanModel.h"
+#import "LCLPlanDetailController.h"
 
 #define ZTIsIphoneX \
 ({BOOL isPhoneX = NO;\
@@ -26,11 +31,22 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 }\
 (isPhoneX);})
 
-#define ZTHairHeight ((ZTIsIphoneX) ? 44 : 20)
-#define ZTNavBarHeight ((ZTIsIphoneX) ? 88 : 64)
-#define ZTTabBarHeight ((ZTIsIphoneX) ? 83 : 49)
-#define ZTSafeAreaHeight ((ZTIsIphoneX) ? 34 : 0)
-#define ZTScreenWidth [[UIScreen mainScreen] bounds].size.width
-#define ZTScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define LCLHairHeight ((ZTIsIphoneX) ? 44 : 20)
+#define LCLNavBarHeight ((ZTIsIphoneX) ? 88 : 64)
+#define LCLTabBarHeight ((ZTIsIphoneX) ? 83 : 49)
+#define LCLSafeAreaHeight ((ZTIsIphoneX) ? 34 : 0)
+#define LCLScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define LCLScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+// 背景色
+#define LCLBackgroundColor [UIColor myColorWithHexString:@"#f0f0f0"]
+#define LCLMainColor [UIColor myColorWithHexString:@"#007AFF"]
+
+// 字体颜色
+#define LCLTextColor3 [UIColor myColorWithHexString:@"#333333"]
+#define LCLTextColor6 [UIColor myColorWithHexString:@"#666666"]
+#define LCLTextColor9 [UIColor myColorWithHexString:@"#999999"]
+
+#define LCLMainService @"http://192.168.10.104:8080"
 
 #endif /* PrefixHeader_pch */

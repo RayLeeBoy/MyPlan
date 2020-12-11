@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"个人中心";
+    self.title = @"我的";
     
     UIBarButtonItem * leftItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStylePlain target:self action:@selector(registAction)];
     self.navigationItem.leftBarButtonItem = leftItem;

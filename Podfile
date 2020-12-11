@@ -16,5 +16,8 @@ pod 'IQKeyboardManager'
 pod 'FMDB'
 pod 'DZNEmptyDataSet'
 pod 'QMUIKit'
+pod 'MJCSegmentInterface'
+pod 'MGSwipeTableCell'
+
 end
 

@@ -63,7 +63,7 @@
         return;
     }
     
-    [LCLNetworkManager POST:@"http://192.168.10.102:8080/planCreate" parameters:@{@"name":self.nameTf.text, @"content":self.descTf.text} success:^(id responseObject) {
+    [LCLNetworkManager POST:@"/planCreate" parameters:@{@"name":self.nameTf.text, @"content":self.descTf.text} success:^(id responseObject) {
         NSLog(@"%s - %@", __func__, responseObject);
         NSString * code = responseObject[@"code"];
         [SVProgressHUD setContainerView:self.view];
@@ -81,7 +81,7 @@
 - (MyRelativeLayout *)addTextFieldWithTitle:(NSString *)title placeholder:(NSString *)placeholder {
     MyRelativeLayout * root = [MyRelativeLayout new];
     root.myHeight = 50;
-    root.myWidth = ZTScreenWidth;
+    root.myWidth = LCLScreenWidth;
     
     UILabel * label = [UILabel new];
     label.myTop = 0;

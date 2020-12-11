@@ -53,7 +53,7 @@
 }
 
 - (void)registAction {
-    [LCLNetworkManager POST:@"http://192.168.10.102:8080/regist" parameters:@{@"username":self.accountTf.text, @"password":self.passwordTf.text} success:^(id responseObject) {
+    [LCLNetworkManager POST:@"/regist" parameters:@{@"username":self.accountTf.text, @"password":self.passwordTf.text} success:^(id responseObject) {
         NSLog(@"%s - %@", __func__, responseObject);
         NSString * code = responseObject[@"code"];
         [SVProgressHUD setContainerView:self.view];

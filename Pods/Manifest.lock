@@ -19,6 +19,8 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - IQKeyboardManager (6.5.6)
+  - MGSwipeTableCell (1.6.11)
+  - MJCSegmentInterface (1.9.6)
   - MJExtension (3.2.2)
   - MJRefresh (3.5.0)
   - QMUIKit (4.2.1):
@@ -349,6 +351,8 @@ DEPENDENCIES:
   - DZNEmptyDataSet
   - FMDB
   - IQKeyboardManager
+  - MGSwipeTableCell
+  - MJCSegmentInterface
   - MJExtension
   - MJRefresh
   - QMUIKit
@@ -362,6 +366,8 @@ SPEC REPOS:
     - DZNEmptyDataSet
     - FMDB
     - IQKeyboardManager
+    - MGSwipeTableCell
+    - MJCSegmentInterface
     - MJExtension
     - MJRefresh
     - QMUIKit
@@ -374,6 +380,8 @@ SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  MGSwipeTableCell: b804e4e450dee439c42250be90bd50458bf67fce
+  MJCSegmentInterface: 00eb48a674716d9dbecb16494e9fe082870fff16
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   QMUIKit: 15294d6a350466e4a6f4df0333eac5bff474f995
@@ -381,6 +389,6 @@ SPEC CHECKSUMS:
   TZImagePickerController: d6fe5baaa11cab16f6c0315886adb04179604863
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: be36aba66bd95e456b1dad3f0920882ab53dbb2c
+PODFILE CHECKSUM: 44e967c9b954b1c4bcb7fd9f6a5d08d05a562286
 
 COCOAPODS: 1.9.3
